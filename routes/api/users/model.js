@@ -1,3 +1,5 @@
 const db = require('../../../data/dbConfig')
 
-module.exports = {}
+const getUsers = () => db.select('user').from('users')
+
+module.exports = { getUsers }
