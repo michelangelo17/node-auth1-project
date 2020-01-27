@@ -5,7 +5,7 @@ const { validatePassword } = require('./middleware')
 module.exports = router
 
 router.post('/', valAuth, validatePassword, (req, res) => {
-  res.json({ message: 'Logged in' })
+  res.json({ message: `${req.session.user} logged in!` })
 })
 
 router.use((err, req, res, next) =>
