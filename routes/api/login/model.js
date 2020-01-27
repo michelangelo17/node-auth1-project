@@ -1,3 +1,5 @@
 const db = require('../../../data/dbConfig')
 
-module.exports = {}
+const findUser = async user => (await db('users').where('user', user))[0]
+
+module.exports = { findUser }
