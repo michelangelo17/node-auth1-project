@@ -1,3 +1,6 @@
 const db = require('../../../data/dbConfig')
 
-module.exports = {}
+const addUser = async userData =>
+  (await db('users').insert(userData, ['user']))[0]
+
+module.exports = { addUser }
