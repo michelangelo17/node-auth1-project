@@ -4,43 +4,43 @@ exports.seed = knex =>
     .then(() =>
       knex('users').insert([
         {
-          user: 'sbehling0',
+          username: 'sbehling0',
           password: 'apCQThKdMrn',
         },
         {
-          user: 'crowet1',
+          username: 'crowet1',
           password: 'KzKd5usLnBwF',
         },
         {
-          user: 'fphillipp2',
+          username: 'fphillipp2',
           password: '2Ylup63T',
         },
         {
-          user: 'btryhorn3',
+          username: 'btryhorn3',
           password: 'qgKDutaoL0',
         },
         {
-          user: 'afranseco4',
+          username: 'afranseco4',
           password: 'XfMhZq',
         },
         {
-          user: 'eyockney5',
+          username: 'eyockney5',
           password: 'zsoCt2EXE',
         },
         {
-          user: 'dslimmon6',
+          username: 'dslimmon6',
           password: '1AZviEu9Xg8j',
         },
         {
-          user: 'fhundall7',
+          username: 'fhundall7',
           password: 'GBWFCKLG',
         },
         {
-          user: 'smacallan8',
+          username: 'smacallan8',
           password: 'VQKOtP',
         },
         {
-          user: 'cfilisov9',
+          username: 'cfilisov9',
           password: 'M7aBMUtdF4CO',
         },
       ])

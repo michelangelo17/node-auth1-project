@@ -2,7 +2,7 @@ const db = require('../../../data/dbConfig')
 
 const findUser = async user =>
   await db('users')
-    .where('user', user)
+    .where('username', user)
     .first()
 
 module.exports = { findUser }

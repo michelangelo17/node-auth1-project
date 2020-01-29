@@ -2,7 +2,7 @@ exports.up = knex =>
   knex.schema.createTable('users', table => {
     table.increments('_id')
     table
-      .text('user')
+      .text('username')
       .unique()
       .index()
       .notNullable()
